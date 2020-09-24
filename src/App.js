@@ -18,7 +18,7 @@ const App = () => {
       <main>
         <div className="search-box">
           {/* form goes here */}
-          <GeoForm updateLatLng={setLatLng} />
+          <GeoForm setLatLng={setLatLng} />
 
           {/* display goes here  -- currently only shows once we have latLng*/}
           {latLng && <WeatherDisplay latLng={latLng} />}
