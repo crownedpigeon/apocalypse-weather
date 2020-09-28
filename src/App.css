@@ -1,0 +1,14 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #5d4157, #a8caba);
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  padding: 2vw;
+  margin: 2vw;
+  background: #fefefe;
+  border-radius: 2vw;
+}

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import GeoForm from "./components/GeoForm";
 import WeatherDisplay from "./components/WeatherDisplay";
 
+import "./App.css";
+
 const App = () => {
   //1. have an input, type in a city
   //2. hit the google maps geocoding api. convert city to lat + long
@@ -19,10 +21,9 @@ const App = () => {
         <div className="search-box">
           {/* form goes here */}
           <GeoForm setLatLng={setLatLng} />
-
-          {/* display goes here  -- currently only shows once we have latLng*/}
-          {latLng && <WeatherDisplay latLng={latLng} />}
         </div>
+        {/* display goes here  -- currently only shows once we have latLng*/}
+        {latLng && <WeatherDisplay latLng={latLng} />}
       </main>
     </div>
   );
