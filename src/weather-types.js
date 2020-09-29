@@ -1,4 +1,4 @@
-const apocalypticWeather = {
+const weatherTypes = {
   200: {
     name: "Radiation Storm",
     desc: "if the world hadn't already ended, you'd think its ending now"
@@ -11,16 +11,24 @@ const apocalypticWeather = {
     name: "Acid Rain",
     desc: "burns through metal and flesh, find shelter"
   },
-  600: "post-nuclear cold front",
-  620: "blizzards"
+  600: {
+    name: "Post-Nuclear Cold Front",
+    desc: ""
+  },
+  700: {
+    name: "Unnatural Events",
+    desc:
+      "could be plague of locusts, zombies, or alien invasion. hard to tell."
+  },
+  800: {
+    name: "Solar Flare",
+    desc:
+      "its clear outside. far too clear. blindingly clear. burningly...clear."
+  },
+  900: {
+    name: "Scattered Clouds",
+    desc: "an accumulation of dust in the air"
+  }
 };
 
-//solar flare
-//locusts
-//dust
-//dangerous fog
-//gray goo
-//gamma ray burst
-//impact winter/volcanic winter
-//clear skies, alien invasion
-//zombies
+export default weatherTypes;

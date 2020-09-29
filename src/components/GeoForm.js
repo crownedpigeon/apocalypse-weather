@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Geocode from "react-geocode";
 require("dotenv").config();
-// import "./GeoForm.css";
 
 Geocode.setApiKey(process.env.REACT_APP_GEOCODING_API_KEY);
 
