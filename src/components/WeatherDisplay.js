@@ -24,7 +24,8 @@ const WeatherDisplay = ({ latLng }) => {
   }, [latLng]);
 
   return (
-    <div>
+    <div className="weather">
+      <div className="weather-display"></div>
       <h2>{weather.name}</h2>
       <h4>{weather.desc}</h4>
     </div>

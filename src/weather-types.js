@@ -26,8 +26,8 @@ const weatherTypes = {
       "its clear outside. far too clear. blindingly clear. burningly...clear."
   },
   900: {
-    name: "Scattered Clouds",
-    desc: "an accumulation of dust in the air"
+    name: "Dangerous Miasmas",
+    desc: "clouds of bad air roam the earth and sky. don't let it touch you. "
   }
 };
 

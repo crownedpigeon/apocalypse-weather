@@ -29,15 +29,16 @@ const GeoForm = ({ setLatLng }) => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <label>Enter location: </label>
-      <input
-        className="input"
-        type="text"
-        value={value}
-        placeholder="Enter a city to get the weather"
-        onChange={e => setValue(e.target.value)}
-      />
-      <input type="submit" value="Get Weather" />
+      <div className="field">
+        {" "}
+        <input
+          className="input"
+          type="text"
+          value={value}
+          placeholder="Enter a city to get the weather"
+          onChange={e => setValue(e.target.value)}
+        />
+      </div>
     </form>
   );
 };
