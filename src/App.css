@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .app {
   width: 100vw;
   height: 100vh;
@@ -19,46 +23,48 @@
 
 main {
   margin-top: 5vw;
-}
-
-.field {
-  height: 8vh;
-  position: relative;
-  background-color: #cecece;
-  transition: 0.3s all;
-  border-top-left-radius: 2vw;
-  border-top-right-radius: 2vw;
-}
-
-.field:hover {
-  background-color: #fefefe;
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+  height: 50vh;
+  width: 50vw;
+  border-radius: 2vw;
+  background: slateblue;
 }
 
 .input {
-  border-radius: 2vw;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
   border: none;
-  height: 8vh;
-  background: transparent;
   outline: none;
-  position: relative;
-  color: #6c6c6c;
-  font-weight: bold;
+
+  font-weight: 100;
   font-size: 1.5rem;
-  width: 48vw;
+
+  height: 8vh;
+  width: 100%;
   padding: 0 2vw;
+
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.3);
+
+  transition-duration: 0.25s;
+}
+
+.input:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.input:focus {
+  background: white;
+  color: slateblue;
 }
 
 .input::placeholder {
-  color: #adadad;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .weather {
   padding: 2vw;
   text-align: center;
-  background: purple;
-  border-bottom-left-radius: 2vw;
-  border-bottom-right-radius: 2vw;
+  color: #cecece;
 }
 
 .weather-display {

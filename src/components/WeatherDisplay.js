@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import weatherTypes from "../weather-types";
+import { ReactComponent as Miasma } from "../icons/miasma.svg";
+
 require("dotenv").config();
 
 const WeatherDisplay = ({ latLng }) => {
@@ -25,6 +27,7 @@ const WeatherDisplay = ({ latLng }) => {
 
   return (
     <div className="weather">
+      <Miasma></Miasma>
       <div className="weather-display"></div>
       <h2>{weather.name}</h2>
       <h4>{weather.desc}</h4>

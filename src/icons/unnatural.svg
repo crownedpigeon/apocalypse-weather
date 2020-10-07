@@ -1,0 +1,25 @@
+<svg width="400" height="145" viewBox="0 0 400 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="unnatural">
+<path id="window" fill-rule="evenodd" clip-rule="evenodd" d="M104.5 93.27C104.5 41.7584 146.258 0 197.77 0C249.282 0 291.04 41.7584 291.04 93.27V115.997V118.497H288.54H107H104.5V115.997V93.27ZM197.77 5C149.02 5 109.5 44.5198 109.5 93.27V113.497H286.04V93.27C286.04 44.5198 246.52 5 197.77 5Z" fill="white" fill-opacity="0.69"/>
+<g id="ship">
+<path id="Rectangle 39" d="M70.9835 143.918C71.2525 144.046 71.5468 144.113 71.8448 144.113H316.476C316.744 144.113 317.011 144.059 317.258 143.953L385.75 114.841C387.754 113.989 387.146 111 384.967 111H10.8353C8.70478 111 8.05114 113.888 9.97393 114.805L70.9835 143.918Z" fill="#B8B8B8"/>
+<path id="Rectangle 38" d="M72.6518 61.4209C73.0028 61.1481 73.4346 61 73.8791 61H313.819C314.225 61 314.623 61.1241 314.957 61.3556L385.736 110.356C387.348 111.472 386.558 114 384.597 114H10.8325C8.92782 114 8.10129 111.59 9.60517 110.421L72.6518 61.4209Z" fill="#C6C5C5"/>
+</g>
+<g id="lights">
+<rect id="Rectangle 24" x="187.858" y="74.8949" width="18.2405" height="32.4276" rx="9.12027" fill="#9E9D9C"/>
+<rect id="Rectangle 25" x="149.636" y="73.0869" width="18.2405" height="32.4276" rx="9.12027" transform="rotate(15 149.636 73.0869)" fill="#9E9D9C"/>
+<rect id="Rectangle 26" x="113.923" y="72.507" width="18.2405" height="32.4276" rx="9.12027" transform="rotate(30 113.923 72.507)" fill="#FFF4CD"/>
+<rect id="Rectangle 27" x="79.1683" y="73.1948" width="18.2405" height="32.4276" rx="9.12027" transform="rotate(45 79.1683 73.1948)" fill="#9E9D9C"/>
+<rect id="Rectangle 29" width="18.2405" height="32.4276" rx="9.12027" transform="matrix(-0.965926 0.258819 0.258819 0.965926 244.32 73.0869)" fill="#FFF4CD"/>
+<rect id="Rectangle 30" width="18.2405" height="32.4276" rx="9.12027" transform="matrix(-0.866025 0.5 0.5 0.866025 280.033 72.507)" fill="#9E9D9C"/>
+<rect id="Rectangle 31" width="18.2405" height="32.4276" rx="9.12027" transform="matrix(-0.707107 0.707107 0.707107 0.707107 314.788 73.1948)" fill="#9E9D9C"/>
+</g>
+<path id="reflection" d="M150.013 45.4697L150.155 45.1227C154.78 33.7762 166.822 27.3244 178.83 29.7594V29.7594" stroke="url(#paint0_linear)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="166.521" y1="27.2634" x2="162.323" y2="47.9657" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.59"/>
+<stop offset="1" stop-color="white" stop-opacity="0.85"/>
+</linearGradient>
+</defs>
+</svg>

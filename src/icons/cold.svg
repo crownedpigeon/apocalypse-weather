@@ -1,0 +1,51 @@
+<svg width="282" height="236" viewBox="0 0 282 236" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cold">
+<path id="cloud_cut" fill-rule="evenodd" clip-rule="evenodd" d="M32.4948 160.005C19.4168 149.858 11 133.99 11 116.156C11 85.5222 35.8333 60.6889 66.4667 60.6889L66.5852 60.689L66.7331 60.6895C78.7713 31.5249 107.489 11 141 11C178.803 11 210.506 37.1189 219.046 72.2951C219.797 72.2615 220.552 72.2444 221.311 72.2444C248.754 72.2444 271 94.4909 271 121.933C271 137.886 263.482 152.083 251.797 161.174C252.743 165.062 253.489 169.028 254.021 173.062C270.849 162.274 282 143.406 282 121.933C282 90.452 258.03 64.5691 227.345 61.5406C214.999 25.7318 181.016 0 141 0C105.404 0 74.5867 20.366 59.5255 50.047C26.0791 53.5177 0 81.7911 0 116.156C0 139.464 11.9936 159.965 30.1483 171.83C30.7234 167.816 31.5094 163.871 32.4948 160.005Z" fill="#E8E8E8"/>
+<g id="wind">
+<path id="Vector 14" d="M48 149.5C45.7909 149.5 44 151.291 44 153.5C44 155.709 45.7909 157.5 48 157.5V149.5ZM122.5 115C120.291 115 118.5 116.791 118.5 119C118.5 121.209 120.291 123 122.5 123V115ZM48 157.5H122.5V149.5H48V157.5ZM122.5 157.5C133.162 157.5 141.041 156.023 146.259 152.149C151.83 148.013 153.5 141.864 153.5 135H145.5C145.5 140.636 144.17 143.737 141.491 145.726C138.459 147.977 132.838 149.5 122.5 149.5V157.5ZM153.5 135C153.5 125.212 142.448 115 122.5 115V123C140.552 123 145.5 131.788 145.5 135H153.5Z" fill="#4F4F4F"/>
+<path id="Vector 16" d="M73 175L155 174.5" stroke="#4F4F4F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector 15" d="M48 200C45.7909 200 44 198.209 44 196C44 193.791 45.7909 192 48 192V200ZM122.5 234.5C120.291 234.5 118.5 232.709 118.5 230.5C118.5 228.291 120.291 226.5 122.5 226.5V234.5ZM48 192H122.5V200H48V192ZM122.5 192C133.162 192 141.041 193.477 146.259 197.351C151.83 201.487 153.5 207.636 153.5 214.5H145.5C145.5 208.864 144.17 205.763 141.491 203.774C138.459 201.523 132.838 200 122.5 200V192ZM153.5 214.5C153.5 224.288 142.448 234.5 122.5 234.5V226.5C140.552 226.5 145.5 217.712 145.5 214.5H153.5Z" fill="#4F4F4F"/>
+</g>
+<g id="snow">
+<g id="snowflake">
+<g id="Group 16">
+<line id="Line 1" x1="197.208" y1="153.5" x2="197.208" y2="206.5" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector 1" d="M190.538 158.246L197 164.708L203.462 158.246" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 2" d="M203.462 201.108L197 194.646L190.538 201.108" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="Group 17">
+<line id="Line 1_2" x1="223.5" y1="180.208" x2="170.5" y2="180.208" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector 1_2" d="M218.754 173.538L212.292 180L218.754 186.462" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 2_2" d="M175.892 186.462L182.354 180L175.892 173.538" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="Group 18">
+<line id="Line 1_3" x1="215.885" y1="161.409" x2="178.409" y2="198.885" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector 1_3" d="M207.813 160.049V169.187H216.951" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 2_3" d="M186.644 199.494L186.644 190.356L177.506 190.356" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="Group 19">
+<line id="Line 1_4" x1="215.591" y1="198.885" x2="178.115" y2="161.409" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector 1_4" d="M216.951 190.813H207.813V199.951" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 2_4" d="M177.506 169.644L186.644 169.644L186.644 160.506" stroke="#E8E8E8" stroke-width="3" stroke-linecap="round"/>
+</g>
+</g>
+<g id="flakes">
+<g id="flake">
+<line id="Line 2" x1="252.893" y1="199.851" x2="236.26" y2="227.189" stroke="#E8E8E8" stroke-width="2" stroke-linecap="round"/>
+<line id="Line 3" x1="236.92" y1="198.483" x2="252.279" y2="226.557" stroke="#E8E8E8" stroke-width="2" stroke-linecap="round"/>
+<line id="Line 4" x1="227.75" y1="211.633" x2="259.741" y2="212.368" stroke="#E8E8E8" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="flake_2">
+<line id="Line 2_2" x1="212.861" y1="127.884" x2="237.11" y2="141.884" stroke="#E8E8E8" stroke-width="2" stroke-linecap="round"/>
+<line id="Line 3_2" x1="211.861" y1="141.884" x2="236.11" y2="127.884" stroke="#E8E8E8" stroke-width="2" stroke-linecap="round"/>
+<line id="Line 4_2" x1="223.486" y1="149.75" x2="223.486" y2="121.75" stroke="#E8E8E8" stroke-width="2" stroke-linecap="round"/>
+</g>
+</g>
+<g id="dots">
+<circle id="dot" cx="187" cy="226" r="5" fill="#E8E8E8"/>
+<circle id="dot_2" cx="170" cy="143" r="6" fill="#E8E8E8"/>
+<circle id="dot_3" cx="245" cy="181" r="4" fill="#E8E8E8"/>
+</g>
+</g>
+</g>
+</svg>
