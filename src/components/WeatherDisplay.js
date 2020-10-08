@@ -1,38 +1,24 @@
-import React, { useState, useEffect } from "react";
-import weatherTypes from "../weather-types";
+import React from "react";
+import { ReactComponent as Acid } from "../icons/acid.svg";
+import { ReactComponent as Blood } from "../icons/blood.svg";
+import { ReactComponent as Cold } from "../icons/cold.svg";
 import { ReactComponent as Miasma } from "../icons/miasma.svg";
+import { ReactComponent as Radiation } from "../icons/radiation.svg";
+import { ReactComponent as Sun } from "../icons/sun.svg";
+import { ReactComponent as Unnatural } from "../icons/unnatural.svg";
 
-require("dotenv").config();
+const WeatherDisplay = ({ weatherId }) => {
+  const weatherSVG = {
+    200: <Radiation></Radiation>,
+    300: <Blood></Blood>,
+    500: <Acid></Acid>,
+    600: <Cold></Cold>,
+    700: <Unnatural></Unnatural>,
+    800: <Sun></Sun>,
+    900: <Miasma></Miasma>
+  };
 
-const WeatherDisplay = ({ latLng }) => {
-  const [weather, setWeather] = useState({});
-
-  useEffect(() => {
-    const getWeather = async ({ lat, lng }) => {
-      const res = await fetch(
-        `${process.env.REACT_APP_OPENWEATHER_DOMAIN}onecall?lat=${lat}&lon=${lng}&exclude=hourly,minutely&appid=${process.env.REACT_APP_OPENWEATHER_API_KEY}`
-      );
-      const data = await res.json();
-
-      const resultId =
-        data.current.weather[0].id > 800
-          ? 900
-          : Math.floor(data.current.weather[0].id / 100) * 100;
-
-      setWeather(weatherTypes[resultId]);
-    };
-
-    getWeather(latLng);
-  }, [latLng]);
-
-  return (
-    <div className="weather">
-      <Miasma></Miasma>
-      <div className="weather-display"></div>
-      <h2>{weather.name}</h2>
-      <h4>{weather.desc}</h4>
-    </div>
-  );
+  return weatherSVG[weatherId];
 };
 
 export default WeatherDisplay;

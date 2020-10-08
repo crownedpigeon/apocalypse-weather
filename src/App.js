@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import GeoForm from "./components/GeoForm";
-import WeatherDisplay from "./components/WeatherDisplay";
+import Weather from "./components/Weather";
 
 import "./App.css";
 
@@ -22,7 +22,7 @@ const App = () => {
         <GeoForm setLatLng={setLatLng} />
 
         {/* display goes here  -- currently only shows once we have latLng*/}
-        {latLng && <WeatherDisplay latLng={latLng} />}
+        {latLng && <Weather latLng={latLng} />}
       </main>
     </div>
   );
