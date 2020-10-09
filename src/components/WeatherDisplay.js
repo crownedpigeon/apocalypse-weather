@@ -8,8 +8,6 @@ import { ReactComponent as Sun } from "../icons/sun.svg";
 import { ReactComponent as Unnatural } from "../icons/unnatural.svg";
 import { TweenLite } from "gsap";
 
-import "./WeatherDisplay.css";
-
 class WeatherDisplay extends React.Component {
   componentDidMount = () => {
     TweenLite.to(".radiation", 2, { fill: "red" });
