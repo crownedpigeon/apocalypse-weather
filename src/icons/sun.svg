@@ -1,25 +1,25 @@
-<svg width="242" height="242" viewBox="0 0 242 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="226" height="226" viewBox="0 0 226 226" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="sun">
 <g id="center">
-<circle id="Ellipse 18" cx="119.204" cy="120.558" r="59.4596" transform="rotate(-0.579085 119.204 120.558)" fill="#FFE793"/>
+<circle id="Ellipse 18" cx="111.204" cy="112.558" r="59.4596" transform="rotate(-0.579085 111.204 112.558)" fill="#FFE793"/>
 </g>
 <g id="rays">
 <g id="vertical_ray">
-<rect id="Rectangle 40" x="115.372" width="11.2558" height="49.0432" rx="5.62791" fill="#FFD056"/>
-<rect id="Rectangle 41" x="115.372" y="192.957" width="11.2558" height="49.0432" rx="5.62791" fill="#FFD056"/>
+<rect id="Rectangle 40" x="107.744" width="10.5116" height="45.8007" rx="5.25581" fill="#FFE793"/>
+<rect id="Rectangle 41" x="107.744" y="180.199" width="10.5116" height="45.8007" rx="5.25581" fill="#FFE793"/>
 </g>
 <g id="horizontal_ray">
-<rect id="Rectangle 40_2" x="242" y="115.372" width="11.2558" height="49.0432" rx="5.62791" transform="rotate(90 242 115.372)" fill="#FFD056"/>
-<rect id="Rectangle 41_2" x="49.0432" y="115.372" width="11.2558" height="49.0432" rx="5.62791" transform="rotate(90 49.0432 115.372)" fill="#FFD056"/>
+<rect id="Rectangle 40_2" x="226" y="107.744" width="10.5116" height="45.8007" rx="5.25581" transform="rotate(90 226 107.744)" fill="#FFE793"/>
+<rect id="Rectangle 41_2" x="45.8007" y="107.744" width="10.5116" height="45.8007" rx="5.25581" transform="rotate(90 45.8007 107.744)" fill="#FFE793"/>
 </g>
 <g id="diagonal_rays">
 <g id="btoomLeft_right_ray">
-<rect id="Rectangle 40_3" x="201.374" y="31.0586" width="11.2558" height="49.0432" rx="5.62791" transform="rotate(45 201.374 31.0586)" fill="#DBBD1D"/>
-<rect id="Rectangle 41_3" x="64.9334" y="167.5" width="11.2558" height="49.0432" rx="5.62791" transform="rotate(45 64.9334 167.5)" fill="#DBBD1D"/>
+<rect id="Rectangle 40_3" x="188.06" y="29.0051" width="10.5116" height="45.8007" rx="5.25581" transform="rotate(45 188.06 29.0051)" fill="#FFE793"/>
+<rect id="Rectangle 41_3" x="60.6403" y="156.425" width="10.5116" height="45.8007" rx="5.25581" transform="rotate(45 60.6403 156.425)" fill="#FFE793"/>
 </g>
 <g id="topLeft_right_ray">
-<rect id="Rectangle 40_4" x="208.529" y="202.178" width="11.2558" height="49.0432" rx="5.62791" transform="rotate(135 208.529 202.178)" fill="#DBBD1D"/>
-<rect id="Rectangle 41_4" x="72.0884" y="65.7373" width="11.2558" height="49.0432" rx="5.62791" transform="rotate(135 72.0884 65.7373)" fill="#DBBD1D"/>
+<rect id="Rectangle 40_4" x="194.742" y="188.811" width="10.5116" height="45.8007" rx="5.25581" transform="rotate(135 194.742 188.811)" fill="#FFE793"/>
+<rect id="Rectangle 41_4" x="67.3222" y="61.3911" width="10.5116" height="45.8007" rx="5.25581" transform="rotate(135 67.3222 61.3911)" fill="#FFE793"/>
 </g>
 </g>
 </g>

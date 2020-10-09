@@ -28,7 +28,7 @@ const Weather = ({ latLng }) => {
 
   return (
     <div className="weather">
-      {/* depending on weather id, what svg to display */}
+      {/* TODO : conditionally render class for background-color based on weather */}
       {weather.id && <WeatherDisplay weatherId={weather.id}></WeatherDisplay>}
       <div className="weather-display"></div>
       <h2>{weather.name}</h2>
