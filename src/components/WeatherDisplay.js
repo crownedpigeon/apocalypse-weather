@@ -13,6 +13,7 @@ class WeatherDisplay extends React.Component {
     super(props);
     this.lightningFlash = null;
     this.stormShake = null;
+    this.rainDrops = null;
   }
 
   componentDidMount = () => {
@@ -27,6 +28,23 @@ class WeatherDisplay extends React.Component {
     this.stormShake = new TimelineLite({ repeat: -1 })
       .to(".radiation-storm", 0.2, { y: 5, x: 2 })
       .to(".radiation-storm", 0.2, { y: 0, x: -2 });
+
+    this.rainDrops = new TimelineLite({ repeat: -1 })
+      .to(".dropOdd", 1.25, {
+        scale: 0.5,
+        y: 20,
+        opacity: 0
+      })
+      .to(
+        ".drop",
+        {
+          scale: 0.5,
+          delay: 0.1,
+          y: 20,
+          opacity: 0
+        },
+        0
+      );
   };
 
   render() {
@@ -42,7 +60,7 @@ class WeatherDisplay extends React.Component {
       900: <Miasma></Miasma>
     };
 
-    return weatherSVG[200];
+    return weatherSVG[600];
   }
 }
 
