@@ -14,6 +14,7 @@ class WeatherDisplay extends React.Component {
     this.lightningFlash = null;
     this.stormShake = null;
     this.rainDrops = null;
+    this.snow = null;
   }
 
   componentDidMount = () => {
@@ -42,6 +43,27 @@ class WeatherDisplay extends React.Component {
           delay: 0.1,
           y: 20,
           opacity: 0
+        },
+        0
+      );
+
+    this.snow = new TimelineLite({ repeat: -1 })
+      .from(".wind", 1, {
+        opacity: 0,
+        x: -20
+      })
+      .to(".wind", 0.5, {
+        opacity: 1,
+        x: 0
+      })
+      .from(
+        ".snow",
+        {
+          opacity: 0,
+          x: -5,
+          delay: 0.5,
+          rotation: 180,
+          transformOrigin: "50% 50%"
         },
         0
       );
