@@ -1,9 +1,9 @@
-<svg width="226" height="226" viewBox="0 0 226 226" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="sun">
-<g id="center">
-<circle id="Ellipse 18" cx="111.204" cy="112.558" r="59.4596" transform="rotate(-0.579085 111.204 112.558)" fill="#FFE793"/>
+<svg width="226" height="226" viewBox="0 -74 226 325" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="sun" >
+<g id="center" >
+<circle class="sun" id="Ellipse 18" cx="111.204" cy="112.558" r="59.4596" transform="rotate(-0.579085 111.204 112.558)" fill="#FFE793"/>
 </g>
-<g id="rays">
+<g id="rays" class="rays">
 <g id="vertical_ray">
 <rect id="Rectangle 40" x="107.744" width="10.5116" height="45.8007" rx="5.25581" fill="#FFE793"/>
 <rect id="Rectangle 41" x="107.744" y="180.199" width="10.5116" height="45.8007" rx="5.25581" fill="#FFE793"/>
