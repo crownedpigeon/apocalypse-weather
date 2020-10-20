@@ -22,6 +22,9 @@ class WeatherDisplay extends React.Component {
     this.spaceship = null;
 
     this.sun = null;
+
+    this.cloud = null;
+    this.wind = null;
   }
 
   componentDidMount = () => {
@@ -118,7 +121,6 @@ class WeatherDisplay extends React.Component {
         break;
       }
 
-      default:
       case 800: {
         this.sun = new TimelineLite({ repeat: -1, yoyo: true })
           .to(".rays", 1, {
@@ -134,6 +136,26 @@ class WeatherDisplay extends React.Component {
             },
             0
           );
+      }
+
+      default:
+      case 900: {
+        this.cloud = new TimelineLite({ repeat: -1, yoyo: true }).from(
+          ".dark",
+          3,
+          {
+            x: 20,
+            opacity: 0
+          }
+        );
+        this.wind = new TimelineLite({ repeat: -1, yoyo: true }).from(
+          ".wind",
+          3,
+          {
+            x: -20,
+            opacity: 0
+          }
+        );
       }
     }
   };
@@ -151,7 +173,7 @@ class WeatherDisplay extends React.Component {
       900: <Miasma></Miasma>
     };
 
-    return weatherSVG[800];
+    return weatherSVG[900];
   }
 }
 
