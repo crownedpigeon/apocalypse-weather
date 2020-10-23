@@ -19,22 +19,25 @@ const Weather = ({ latLng }) => {
           ? 900
           : Math.floor(data.current.weather[0].id / 100) * 100;
 
-      const weather = weatherTypes[resultId];
-      setWeather({ ...weather, id: resultId });
+      const newWeather = weatherTypes[resultId];
+
+      setWeather({ ...newWeather, id: resultId });
     };
 
     getWeather(latLng);
   }, [latLng]);
 
-  return (
-    <div className="weather">
-      {/* TODO : conditionally render class for background-color based on weather */}
-      {weather.id && <WeatherDisplay weatherId={weather.id}></WeatherDisplay>}
-      <div className="weather-display"></div>
-      <h2>{weather.name}</h2>
-      <h4>{weather.desc}</h4>
-    </div>
-  );
+  if (weather)
+    return (
+      <div className="weather">
+        {/* TODO : conditionally render class for background-color based on weather */}
+        {weather.id && <WeatherDisplay weather={weather}></WeatherDisplay>}
+        <div className="weather-display"></div>
+        <h2>{weather.name}</h2>
+        <h4>{weather.desc}</h4>
+      </div>
+    );
+  else return <div>LOADING</div>;
 };
 
 export default Weather;

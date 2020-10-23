@@ -5,15 +5,12 @@ import Weather from "./components/Weather";
 import "./App.css";
 
 const App = () => {
-  //1. have an input, type in a city
-  //2. hit the google maps geocoding api. convert city to lat + long
-  //3. pass lat+long to the weather api. get weather data.
-  //4. look at weather code, find its correspondant in our "apocalyptic" weather
-  //5. display the apocalyptic weather
-
-  //6. keep the box to search city's, but automatically 'get' user's location and display weather for it
-
   const [latLng, setLatLng] = useState(null);
+
+  // TODO: move weather state to App so we can change class based on weather
+  //TODO: some indication that we have gotten new weather data for a new location--even if the weather is the same.
+  //TODO: make sure size of svg sis consistent
+  //TODO: automatically user's location and  their weather as default
 
   return (
     <div className="app">
