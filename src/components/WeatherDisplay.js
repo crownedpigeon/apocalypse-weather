@@ -20,8 +20,6 @@ const WeatherDisplay = ({ weather }) => {
   };
 
   useEffect(() => {
-    console.log(`this is weather: ${JSON.stringify(weather)}`);
-
     const getAnimation = weather => {
       switch (weather) {
         case 200: {
@@ -36,8 +34,6 @@ const WeatherDisplay = ({ weather }) => {
           // this.stormShake = new TimelineLite({ repeat: -1 })
           //   .to(".radiation-storm", 0.2, { y: 5, x: 2 })
           //   .to(".radiation-storm", 0.2, { y: 0, x: -2 });
-
-          break;
         }
         case 300:
         case 500: {
@@ -57,8 +53,6 @@ const WeatherDisplay = ({ weather }) => {
               },
               0
             );
-
-          break;
         }
 
         case 600: {
@@ -82,8 +76,6 @@ const WeatherDisplay = ({ weather }) => {
               },
               0
             );
-
-          break;
         }
 
         case 700: {
@@ -112,8 +104,6 @@ const WeatherDisplay = ({ weather }) => {
               },
               0.2
             );
-
-          break;
         }
 
         case 800: {
@@ -130,7 +120,6 @@ const WeatherDisplay = ({ weather }) => {
               },
               0
             );
-          break;
         }
 
         case 900: {
@@ -157,12 +146,11 @@ const WeatherDisplay = ({ weather }) => {
           //     ease: "ease.out"
           //   }
           // );
-          break;
         }
       }
     };
 
-    const animation = getAnimation(weather.id).restart();
+    getAnimation(weather.id).restart();
   }, [weather]);
 
   return <div>{weatherSVG[weather.id]}</div>;

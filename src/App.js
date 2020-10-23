@@ -8,9 +8,9 @@ const App = () => {
   const [latLng, setLatLng] = useState(null);
 
   // TODO: move weather state to App so we can change class based on weather
-  //TODO: some indication that we have gotten new weather data for a new location--even if the weather is the same.
-  //TODO: make sure size of svg sis consistent
-  //TODO: automatically user's location and  their weather as default
+  // TODO: redo animation timelines -- use 'set' and 'restart'
+  // TODO: make sure size of svg sis consistent
+  // TODO: automatically user's location and  their weather as default
 
   return (
     <div className="app">
