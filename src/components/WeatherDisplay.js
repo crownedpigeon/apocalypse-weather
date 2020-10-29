@@ -6,7 +6,7 @@ import { ReactComponent as Miasma } from "../icons/miasma.svg";
 import { ReactComponent as Radiation } from "../icons/radiation.svg";
 import { ReactComponent as Sun } from "../icons/sun.svg";
 import { ReactComponent as Unnatural } from "../icons/unnatural.svg";
-import { TimelineLite } from "gsap";
+import { TimelineMax } from "gsap";
 
 const WeatherDisplay = ({ weather }) => {
   const weatherSVG = {
@@ -23,40 +23,48 @@ const WeatherDisplay = ({ weather }) => {
     const getAnimation = weather => {
       switch (weather) {
         case 200: {
-          return new TimelineLite({ repeat: -1 })
-            .to(".flash", 0.2, { opacity: 0 })
-            .to(".flash", 0.2, { opacity: 1 })
-            .to(".flash", 0.2, { opacity: 0 })
-            .to(".flash", 0.2, { opacity: 1 })
-            .to(".flash", 0.2, { opacity: 0 })
-            .to(".flash", 1, { opacity: 0 });
-
-          // this.stormShake = new TimelineLite({ repeat: -1 })
-          //   .to(".radiation-storm", 0.2, { y: 5, x: 2 })
-          //   .to(".radiation-storm", 0.2, { y: 0, x: -2 });
-        }
-        case 300:
-        case 500: {
-          return new TimelineLite({ repeat: -1 })
-            .to(".dropOdd", 1.25, {
-              scale: 0.5,
-              y: 20,
-              opacity: 0
-            })
-            .to(
-              ".drop",
+          return new TimelineMax({
+            repeat: -1,
+            yoyo: true
+          })
+            .fromTo(
+              ".flash",
+              0.5,
               {
-                scale: 0.5,
-                delay: 0.1,
-                y: 20,
                 opacity: 0
               },
-              0
+              { opacity: 1, ease: "Bounce.easeOut" }
+            )
+            .fromTo(
+              ".radiation-storm",
+              0.5,
+              { x: 0, y: 0 },
+              { x: -5, y: 5, ease: "Elastic.easeOut" },
+              "-=.5"
             );
         }
 
+        case 300:
+        case 500: {
+          return new TimelineMax({ repeat: -1 }).fromTo(
+            ".raindrop",
+            1,
+            {
+              opacity: 1,
+              y: 0,
+              scale: 1
+            },
+            {
+              scale: 0.4,
+              stagger: 0.1,
+              y: 30,
+              opacity: 0
+            }
+          );
+        }
+
         case 600: {
-          return new TimelineLite({ repeat: -1 })
+          return new TimelineMax({ repeat: -1 })
             .from(".wind", 1, {
               opacity: 0,
               x: -20
@@ -79,7 +87,7 @@ const WeatherDisplay = ({ weather }) => {
         }
 
         case 700: {
-          return new TimelineLite({ repeat: -1 })
+          return new TimelineMax({ repeat: -1 })
             .to(".spaceship", 1, {
               rotate: 5,
               transformOrigin: "50% 50%"
@@ -107,7 +115,7 @@ const WeatherDisplay = ({ weather }) => {
         }
 
         case 800: {
-          return new TimelineLite({ repeat: -1, yoyo: true })
+          return new TimelineMax({ repeat: -1, yoyo: true })
             .to(".rays", 1, {
               scale: 1.2,
               transformOrigin: "50% 50%"
@@ -122,8 +130,9 @@ const WeatherDisplay = ({ weather }) => {
             );
         }
 
+        default:
         case 900: {
-          return new TimelineLite({
+          return new TimelineMax({
             repeat: -1,
             yoyo: true,
             paused: true
@@ -136,21 +145,22 @@ const WeatherDisplay = ({ weather }) => {
               x: 0,
               opacity: 1,
               ease: "ease.out"
-            });
-          // this.wind = new TimelineLite({ repeat: -1, yoyo: true }).from(
-          //   ".wind",
-          //   2,
-          //   {
-          //     x: -20,
-          //     opacity: 0,
-          //     ease: "ease.out"
-          //   }
-          // );
+            })
+            .from(
+              ".wind",
+              2,
+              {
+                x: -20,
+                opacity: 0,
+                ease: "ease.out"
+              },
+              0
+            );
         }
       }
     };
 
-    getAnimation(weather.id).restart();
+    weather.id && getAnimation(weather.id).play();
   }, [weather]);
 
   return <div>{weatherSVG[weather.id]}</div>;
